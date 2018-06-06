@@ -57,3 +57,10 @@ group("jpeg_includes") {
     public_configs = [ "//third_party/libjpeg:libjpeg_config" ]
   }
 }
+
+static_library("nvpipe") {
+  sources = [
+    "nvpipe/dynlink_cuda.h",
+    "nvpipe/dynlink_cuda.cpp",
+  ]
+}
